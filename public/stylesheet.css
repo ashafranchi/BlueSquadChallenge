@@ -1,12 +1,61 @@
+html, body, #root{
+  height: 100%;
+}
+
 body {
   background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-image: linear-gradient(90deg, #009FCA 0%, #4963BA 100%);
 }
 .App {
   text-align: center;
+  margin: auto;
+  font-family: Helvetica, sans-serif;
 }
 .login {
+  background-color: white;
+  width: 30%;
+  margin: 8% auto;
+  border-radius: 20px;
+  padding: 40px;
 }
-.login-card {
 
+.login-button {
+  font-size: 16px;
+  width: 40%;
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #507BCE;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+.login-logo {
+  padding-bottom: 40px;
+  height: 80%;
+  width: 80%;
+}
+
+.terms-text {
+  margin-top: 80px;
+  font-size: 10px;
+  color: #909090;
+}
+
+.input {
+  padding-top: 10px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  width: 80%;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #CEDCF4;
+}
+
+.wrap-input {
+  width: 100%;
+  margin-top: 10px;
+  border: 10px;
+  border-bottom: 2px #CEDCF4;
 }
