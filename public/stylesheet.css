@@ -1,4 +1,4 @@
-html, body, #root{
+html, body, #root {
   height: 100%;
 }
 
@@ -11,6 +11,56 @@ body {
   margin: auto;
   font-family: Helvetica, sans-serif;
 }
+h1 {
+  margin-left: 60px;
+  margin-top: -10px;
+  padding-top: 100px;
+}
+
+h3 {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.activity {
+  margin-left: 60px;
+  width: 80%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-width: 1px;
+  background-color: white;
+}
+
+.dashboard {
+  background-color: #FBFBFE;
+  margin-top: 0;
+  margin-left: -10px;
+  text-align: left;
+  padding-bottom: 40px;
+  width: 108%;
+}
+.errorMessage {
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+  padding-left: 0.25rem;
+}
+
+.linechart {
+  width: 90%;
+  margin-left: 20px;
+  padding-bottom: 80px;
+}
+
+.log {
+  margin-left: 60px;
+  margin-top: 40px;
+  width: 80%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-width: 1px;
+  background-color: white;
+}
+
 .login {
   background-color: white;
   width: 30%;
@@ -51,6 +101,12 @@ body {
   outline: 0;
   border-width: 0 0 2px;
   border-color: #CEDCF4;
+}
+
+.table {
+  width: 100%;
+  margin-left: 20px;
+  padding-bottom: 80px;
 }
 
 .wrap-input {
