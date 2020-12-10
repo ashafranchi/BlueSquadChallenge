@@ -44,6 +44,20 @@ function Dashboard() {
       getData();
   }, []);
 
+  const [statistics, setStatistics] = useState([]);
+  useEffect(() => {
+    async function getData() {
+      await axios
+        .get("https://mock-api.bluesquad.co/missions/5fcb32bcdce9720006c1fc40/stats", { headers: {'Accept': 'application/json',
+          'Content-type': 'application/json',"Authorization" : `Bearer ${accessToken}`} })
+        .then((statistics) => {
+          console.log(statistics.data);
+          setStatistics(statistics.data);
+        });
+    }
+      getData();
+  }, []);
+
 
   const [data, setData] = useState([]);
 
@@ -87,72 +101,72 @@ console.log(stats.time);
                 <tr>
                   <td><FontAwesomeIcon icon={faLightbulb} /></td>
                   <td>Confirm your voter registration</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">8512</td>
+                  <td className="completed">2167</td>
+                  <td className="rejected">4130</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faCommentDots} /></td>
                   <td>Invite your friends to our launch</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">8427</td>
+                  <td className="completed">200</td>
+                  <td className="rejected">4467</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faLightbulb} /></td>
                   <td>Welcome to Blue Squad!</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">9615</td>
+                  <td className="completed">2477</td>
+                  <td className="rejected">4958</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faCommentDots} /></td>
                   <td>Check your friends' voter registration</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">7360</td>
+                  <td className="completed">1762</td>
+                  <td className="rejected">3621</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faEnvelope} /></td>
                   <td>Tell your friends about our launch event</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">8979</td>
+                  <td className="completed">2230</td>
+                  <td className="rejected">4524</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faCommentDots} /></td>
                   <td>Build your community</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">8998</td>
+                  <td className="completed">2149</td>
+                  <td className="rejected">4523</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faLightbulb} /></td>
                   <td>How Blue Squad protects your data</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">9103</td>
+                  <td className="completed">2336</td>
+                  <td className="rejected">4338</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faCommentDots} /></td>
                   <td>Invite your friends to join Blue Squad</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">10006</td>
+                  <td className="completed">2546</td>
+                  <td className="rejected">5547</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faLightbulb} /></td>
                   <td>Learn about ActBlue</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">10049</td>
+                  <td className="completed">2581</td>
+                  <td className="rejected">4706</td>
                 </tr>
                 <tr>
                   <td><FontAwesomeIcon icon={faLightbulb} /></td>
                   <td>Grassroots money for politics</td>
-                  <td>17</td>
-                  <td>10</td>
-                  <td>5</td>
+                  <td className="started">8095</td>
+                  <td className="completed">2003</td>
+                  <td className="rejected">4294</td>
                 </tr>
             </tbody>
         </table>

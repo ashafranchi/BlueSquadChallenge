@@ -108,20 +108,44 @@ h3 {
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 80px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 table {
   width: 90%;
+}
+th {
+  color: black;
+  padding-bottom: 4px;
+}
+td {
+  color: #344B8D;
+  padding-bottom: 2px;
 }
 
 th, td {
   border-bottom: 1px solid #ddd;
 }
 
+.started {
+  color: #52DC4C;
+}
+
+.completed {
+  color: #009FCA;
+}
+
+.rejected {
+  color: #FFA2A3;
+}
+
 @media only screen and (max-width: 600px) {
   .table {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  th {
+    display: none;
   }
 }
 
